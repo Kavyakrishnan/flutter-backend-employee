@@ -8,7 +8,7 @@ app.use(Bodyparser.urlencoded({extended:true}))
 app.use(Bodyparser.json())
 
 app.get('/',(req,res)=>{
-    res.send(" Welcome to my Bus nodejs")
+    res.send(" Welcome to my Employee nodejs")
 })
 app.post('/read',(req,res)=>{
     var EmployeeObject=new employeemodel(req.body)
